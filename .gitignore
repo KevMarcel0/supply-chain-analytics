@@ -10,3 +10,6 @@ __pycache__/
 # but the SQLite db is regenerated from them, so it's optional to commit.
 # Uncomment the next line if you'd rather not commit the binary db:
 # supplychain.db
+
+# Real dataset is large (~91 MB) and re-downloadable — fetch with download_data.py
+realdata/

@@ -11,6 +11,47 @@ operational problems hidden inside for the analysis to surface.
 
 ---
 
+## 📚 Two parts
+
+| Part | Data | What it shows |
+|---|---|---|
+| **1 — Modeling** | Synthetic (I built it) | Data modeling, star schema, SQL + Python from scratch |
+| **2 — Real data** ⭐ | **DataCo Global** (180,519 real orders) | Analyzing a real, messy, public dataset end-to-end |
+
+Employers like seeing **both**: that you can model data *and* work with real data you didn't create. Part 2 is below; Part 1 follows.
+
+---
+
+## ⭐ Part 2 — Real-data analysis (DataCo Global)
+
+**Dataset:** [DataCo Smart Supply Chain](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) — 180,519 real orders (2015–2018), 53 columns, covering delivery times, shipping modes, regions, sales and profit. Free/public (Mendeley DOI `10.17632/8gx2fvg2k6.3`).
+
+```bash
+python3 download_data.py        # fetches the ~91 MB dataset into realdata/
+.venv/bin/python analysis_real.py   # prints KPIs + writes charts_real/
+```
+
+### 🔎 Real findings
+
+| Finding | Number | So what? |
+|---|---|---|
+| **Overall late-delivery rate** | **54.8%** | More than half of all orders arrive late — a systemic problem. |
+| **"First Class" shipping is late** | **95.3%** | The *premium fast* tier almost never hits its promise; Standard Class is only 38% late. |
+| **Lateness is NOT regional** | ~55% in *every* market | Europe, Asia, USCA, Africa, LATAM all ~54–55% → it's a scheduling/promise problem, not a geography problem. |
+| **Stable over time** | ~55% every year 2015–2018 | Never improved — no one fixed the root cause. |
+| **Biggest department** | Fan Shop, $17.1M sales | Where delivery failures hurt revenue most. |
+
+**The story:** DataCo sets aggressive delivery promises on its premium shipping tiers
+(First/Second Class) that it misses almost every time, while cheaper Standard Class is
+far more reliable. The fix isn't regional logistics — it's **setting realistic delivery
+windows** (or fixing fulfillment for the fast tiers).
+
+![Late by shipping mode](charts_real/01_late_by_mode.png)
+
+---
+
+## Part 1 — Modeling project (synthetic data)
+
 ## 🎯 The business questions
 
 1. **Which suppliers can we trust?** (on-time delivery, fill rate, quality)
