@@ -1,0 +1,12 @@
+# Python virtual environment (machine-specific, large — never commit)
+.venv/
+__pycache__/
+*.pyc
+
+# OS noise
+.DS_Store
+
+# Keep the data CSVs and charts (they're part of the portfolio),
+# but the SQLite db is regenerated from them, so it's optional to commit.
+# Uncomment the next line if you'd rather not commit the binary db:
+# supplychain.db

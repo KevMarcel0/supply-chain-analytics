@@ -1,0 +1,5 @@
+WarehouseID,WarehouseName,Location,Region
+1,DC-East,"Edison, NJ",Northeast
+2,DC-South,"Dallas, TX",South
+3,DC-West,"Ontario, CA",West
+4,DC-Central,"Joliet, IL",Midwest

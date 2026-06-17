@@ -1,0 +1,16 @@
+ProductID,ProductName,Family,UnitCost,UnitPrice,GrossMarginPct,PrimarySupplierID
+101,Hex Bolt M6,Fasteners,0.4,1.2,0.667,1
+102,Hex Bolt M8,Fasteners,0.55,1.6,0.656,1
+103,Wood Screw 2in,Fasteners,0.2,0.75,0.733,6
+104,Lock Washer,Fasteners,0.1,0.45,0.778,6
+105,Steel Bracket L,Brackets,2.1,6.5,0.677,2
+106,Steel Bracket XL,Brackets,3.4,9.9,0.657,2
+107,Corner Brace,Brackets,1.2,3.8,0.684,4
+108,Hinge 3in,Hardware,1.8,5.4,0.667,3
+109,Drawer Slide,Hardware,4.5,12.0,0.625,3
+110,Cabinet Handle,Hardware,2.75,8.25,0.667,8
+111,Caster Wheel 2in,Wheels,3.1,9.5,0.674,5
+112,Caster Wheel 4in,Wheels,5.6,15.75,0.644,5
+113,Rubber Gasket,Seals,0.85,2.95,0.712,7
+114,O-Ring Kit,Seals,1.4,4.6,0.696,7
+115,Adhesive Tube,Consumables,2.3,6.99,0.671,4
